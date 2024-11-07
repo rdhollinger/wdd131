@@ -12,7 +12,7 @@
 body{
     display: grid;
     height: 100vh;
-    grid-template: auto 1f auto / 2fr 1fr;
+    grid-template: auto 1fr auto / auto 1fr;
     background: #e9f1f7;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -63,7 +63,6 @@ main{
 }
 .card{
     display: grid;
-    grid-template: repeat(1fr 4)/repeat(1fr 4) ;
     border: 2px solid #54426b;
     border-radius: 10px;
     margin: 50px;
@@ -107,8 +106,8 @@ p{
     line-height: 25px;
 }
 .link{
-    padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 11rem;
     padding-left: 2rem;
     align-content: center;
     line-height: 25px;
