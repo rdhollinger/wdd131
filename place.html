@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="description" content="A country page for week 3 assignment.">
+    <meta name="author" content="Rachael Hollinger">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+        <header>
+            <h1>Ireland</h1>
+                <img class="hero" src="images/Ireland-small.webp" alt="Rolling hills of Ireland" srcset="images/Ireland-small.webp 500w, images/Ireland-large.webp 2000w" sizes="(max-width: 500px) 100vw, 1800px">
+
+        </header>
+        <main>
+
+            <section class="cards">
+                <h2>Data</h2>
+                <ul class="data">
+                    <li><span>Area:</span> 84,421 km<sup>2</sup></li>
+                    <li><span>Population:</span> 5.262 Million</li>
+                    <li><span>Capital:</span> Dublin</li>
+                    <li><span>Languages:</span> English, Irish Gaelic</li>
+                    <li><span>Currency:</span> Euro</li>
+                    <li><span>Time Zone:</span> UTC+01:00</li>
+                </ul>
+            </section>
+            <section class="cards">
+                <h2>Weather <img class="cloud" src="images/1530391_weather_clouds_sun_sunny_icon.svg"></h2>
+                <ul class="weather">
+                    <li><span>Temperture:</span> 37 <sup>o</sup>F</li>
+                    <li><span>Conditions:</span> Mostly Cloudy</li>
+                    <li><span>Wind:</span>5 mph</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p> &copy; <span id="year"></span> Rachael Hollinger | Idaho, USA </p>
+            <p>Last Modification: <span id="lastModified"></span> </p>
+        </footer>
+</body>
+</html>
