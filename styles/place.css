@@ -41,9 +41,6 @@ h2{
     padding: 10px;
 
 }
-.cards img{
-    display: none;
-}
 span{
     font-weight: bold;
 }
@@ -102,6 +99,9 @@ footer{
         content: '⛅';
         font-size: 1.8rem;
 
+    }
+    .cards img{
+        display: none;
     }
 
 }
