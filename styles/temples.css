@@ -34,13 +34,13 @@ h2{
 	border: 0;
 	background: none;
 	color: #000;
- 	position: right;
+ 	position: absolute;
 	font-size: 1.5rem;
 	margin-left: 1rem;
 }
 #menu::before {
 	content: "☰";
-    color: var(--accent-color-2);
+    color: var(--secondary-color);
 }
 #menu.open::before {
 	content: "❌";
