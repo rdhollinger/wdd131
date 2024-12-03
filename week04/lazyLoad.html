@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Lazy Picture Loading</title>
+    <link rel="stylesheet" href="styles/lazyLoad.css">
+    <script src="scripts/lazyLoad.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Lazy Loading practice
+        </h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/batonRougeLouisiana.jpeg" alt="Baton Rouge, Louisiana" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/billingsMontana.jpg" alt="Billings, Montana" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/bountifulUtah.jpg" alt="Bountiful, Utah" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/frankfurtGermany.jpg" alt="Frankfurt, Germany" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/gilbertArizona.jpg" alt="Gilbert, Arizona" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/hamiltonNewZealand.jpg" alt="Hamilton, New Zealand" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p> &copy; <span id="year"></span> Rachael Hollinger | Idaho, USA </p>
+        <p>Last Modification: <span id="lastModified"></span> </p>
+    </footer>
+</body>
+</html>
