@@ -30,7 +30,6 @@ h3{
     padding: 1rem;
 }
 .navigation a{
-    display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -40,7 +39,9 @@ h3{
     color: var(--text-color-light);
     font-weight: 700;
 }
-
+a{
+    color: var(--text-color-light);
+}
 a.active{
     background-color: var(--accent-color-3);
 }
@@ -92,22 +93,13 @@ p{
         list-style: none;
         flex-direction: row;
     }
-    .navigation li{
+    .navigation a{
         flex: 1 1 auto;
         text-align: center;
-    }
-    .navigation a{
         text-decoration: none;
     }
     .active{
         background-color: var(--accent-color-3);
-        color: var(--text-color-light);
-    }
-    li{
-        padding: 1rem;
-    }
-    li:hover{
-        background-color: var(--primary-color);
         color: var(--text-color-light);
     }
     #menu{
@@ -117,21 +109,18 @@ p{
         content: none;
     }
     main{
-        display: grid;
-        grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+        display: flex;
         padding: 1rem;
     }
     .rabbit{
-        grid-column: 1/2;
-        grid-row: 1/4;
         border: 1rem solid var(--accent-color-1);
         border-radius: 10px;
     }
     h3{
-        grid-column: 2/5;
+        text-align: center;
     }
     p{
-        grid-column: 2/5;
+        padding: .5rem;
     }
     .answer1, .answer2{
         text-align: left;

@@ -31,7 +31,6 @@ h2, h3, h4{
     font-weight: 700;
 }
 .navigation a{
-    display: none;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -41,7 +40,9 @@ h2, h3, h4{
     color: var(--text-color-light);
     font-weight: 700;
 }
-
+a{
+    color: var(--text-color-light);
+}
 a.active{
     background-color: var(--accent-color-3);
 }
@@ -106,7 +107,7 @@ ul{
         list-style: none;
         flex-direction: row;
     }
-    .navigation li{
+    .navigation a{
         flex: 1 1 auto;
         text-align: center;
     }
@@ -119,10 +120,6 @@ ul{
     }
     li{
         padding: 1rem;
-    }
-    li:hover{
-        background-color: var(--primary-color);
-        color: var(--text-color-light);
     }
     #menu{
         display: none;
