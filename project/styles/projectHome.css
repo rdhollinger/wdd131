@@ -29,13 +29,22 @@ h1{
 h3{
     padding: 1rem;
 }
+.navigation{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all .25s ease-out;
+}
+.navigation.visable{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
 #menu{
-    font-size: 1.5rem;
-    border: 0;
     background: none;
+    border: 0;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    font-size: 2rem;
 }
 #menu::before{
     content: "☰";
@@ -43,14 +52,7 @@ h3{
 #menu.open::before{
     content: "❌";
 }
-.navigation{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: var(--accent-color-2);
-    color: var(--text-color-light);
-}
-.navigation li{
+.navigation a{
     display: none;
     padding: 1rem;
     text-align: center;
@@ -78,4 +80,60 @@ footer{
     text-align: center;
     background-color: var(--accent-color-1);
     color: var(--text-color-dark);
+}
+
+@media (min-width: 1024px){
+    .navigation{
+        background-color: var(--accent-color-2);
+        list-style: none;
+        flex-direction: row;
+    }
+    .navigation li{
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .navigation a{
+        text-decoration: none;
+    }
+    .active{
+        background-color: var(--accent-color-3);
+        color: var(--text-color-light);
+    }
+    li{
+        padding: 1rem;
+    }
+    li:hover{
+        background-color: var(--primary-color);
+        color: var(--text-color-light);
+    }
+    #menu{
+        display: none;
+    }
+    button{
+        content: none;
+    }
+    main{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+    }
+    .rabbit{
+        grid-column: 1/2;
+        grid-row: 1/4;
+        border: 1rem solid var(--accent-color-1);
+        border-radius: 10px;
+    }
+    h3{
+        grid-column: 2/5;
+    }
+    p{
+        grid-column: 2/5;
+    }
+    .answer1, .answer2{
+        text-align: left;
+        padding-left: .5rem;
+    }
+    footer{
+        text-align: center;
+    }
 }
