@@ -9,22 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital@0;1&family=Jura:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/projectHome.css">
-    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/contactUs.css">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/contactUs.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1><img class="emblem" src="images/4-H_emblem_digital/4-H_Clover-White_digital.png" alt="4-H emblem" width="50" height="50" loading="lazy">Little Wood River Critter Ranchers</h1>
+        <button id="menu"></button>
+        <nav>
+            <div class="navigation">
+                <a href="https://rdhollinger.github.io/wdd131/project/projectHome.html">Home</a>
+                <a href="https://rdhollinger.github.io/wdd131/project/projectInfo.html">Project Information</a>
+                <a class="active" href="https://rdhollinger.github.io/wdd131/project/contactUs.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
     <main>
-        <header>
-            <h1><img class="emblem" src="images/4-H emblem_digital/4-H Clover-White_digital.png" alt="4-H emblem" width="50" height="50" loading="lazy">Little Wood River Critter Ranchers</h1>
-            <button id="menu"></button>
-            <nav>
-                    <ul class="navigation">
-                        <li><a href="https://rdhollinger.github.io/wdd131/project/projectHome.html"></a>Home</li>
-                        <li><a href="projectInfo.html"></a>Project Information</li>
-                        <li class="active"><a href="https://rdhollinger.github.io/wdd131/project/contactUs.html"></a>Contact Us</li>
-                    </ul>
-            </nav>
-        </header>
+        <div class="container">
+            <form id="contactUs" method="get" action="contact.html">
+                <h2>Contact Us</h2>
+                <div class="group">
+                    <label>First Name: *<input type="text" name="fname" required></label>
+                    <label>Last Name: *<input type="text" name="lname" required></label>
+                    <label>Email: *<input class="em" type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Age of Child: <input type="number" name="age" placeholder="5-17"></label>
+                    <label>Questions or anything you want us to know: <textarea name="questions" id="qa"></textarea></label>
+                </div>
+                <div class="group">
+                    <input type="submit" value="Contact Us">
+                </div>
+
+            </form>
+        </div>
     </main>
     <footer>
         <p> &copy; <span id="year"></span> Rachael Hollinger | Idaho, USA </p>

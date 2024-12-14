@@ -30,6 +30,9 @@ h2, h3, h4{
     font-family: "Jura", Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
+h4{
+    color: var(--text-color-dark);
+}
 .navigation a{
     padding: 1rem;
     text-align: center;
@@ -41,10 +44,11 @@ h2, h3, h4{
     font-weight: 700;
 }
 a{
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
 }
 a.active{
     background-color: var(--accent-color-3);
+    color: var(--text-color-light);
 }
 footer{
     text-align: center;
@@ -71,6 +75,7 @@ footer{
 }
 #menu::before{
     content: "☰";
+    color: var(--text-color-dark);
 }
 #menu.open::before{
     content: "❌";
